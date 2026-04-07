@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled JS Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #38bdf8;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #0ea5e9;
+            transform: scale(1.05);
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Welcome Devzz 😎</h1>
+    <p id="text">Click button to change this text</p>
+
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "Text Changed Successfully 🔥";
+        }
+    </script>
+
+</body>
+</html>
